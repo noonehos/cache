@@ -1,7 +1,7 @@
 {
     "name": "memcrab/cache",
     "description": "PHP Cache Lib for memCrab Core API",
-    "keywords": ["cache", "php", "yaml", "file", "lib"],
+    "keywords": ["cache", "php", "yaml", "file", "lib", "memcrab"],
     "homepage": "http://memcrab.com",
     "license": "MIT",
     "authors": [
