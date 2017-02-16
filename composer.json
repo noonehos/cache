@@ -1,4 +1,5 @@
-   "name": "memcrab/cache",
+{
+    "name": "memcrab/cache",
     "description": "PHP Cache Lib for memCrab Core API",
     "keywords": ["cache", "php", "yaml", "file", "lib"],
     "homepage": "http://memcrab.com",
