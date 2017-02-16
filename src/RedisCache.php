@@ -3,14 +3,14 @@ declare (strict_types = 1);
 namespace memCrab\Cache;
 use memCrab\Exceptions\FileException;
 
-class RedisYamlCache implements FileCache {
+class RedislCache implements FileCache {
 	private $Redis;
 
 	function __construct(\Redis $Redis) {
 		$this->Redis = $Redis;
 	}
 
-	public function key(string $filePath): string{
+	public function fileKey(string $filePath): string{
 		$fullpath = realpath($filePath);
 		if ($fullpath === false) {
 			throw new FileException(
@@ -32,7 +32,7 @@ class RedisYamlCache implements FileCache {
 		return unserialize($this->Redis->get($key));
 	}
 
-	public function set(string $key, array $yamlArray): bool {
-		return $this->Redis->set($key, $yamlArray);
+	public function set(string $key, array $array): bool {
+		return $this->Redis->set($key, $array);
 	}
 }
