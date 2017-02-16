@@ -1,6 +1,8 @@
 <?php
 declare (strict_types = 1);
 namespace memCrab\Cache;
+
+use memCrab\Cache\FileCache;
 use memCrab\Exceptions\FileException;
 
 class RedislCache implements FileCache {
